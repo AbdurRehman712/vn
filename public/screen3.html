@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- AlpineJs Scripts -->
+    <!-- @alpinejs/ui v3.12 -->
+    <script defer src="./js/alpineui.min.js"></script>
+    <!-- @alpinejs/focus v3.12 -->
+    <script defer src="./js/alpinefocus.min.js"></script>
+    <!-- alpinejs v3.12 -->
+    <script defer src="./js/alpine.min.js"></script>
+
+    <title>Quick Start Tailwind VS Code by ARM</title>
+</head>
+
+<body>
+    <div class="md:max-w-sm m-auto w-full">
+        <div class="flex justify-center items-center h-screen text-center relative w-full bg-teal-50" x-data x-on:click="location.href='screen4.html';">
+            <img class="w-full z-0 absolute" src="./images/map-bg.svg" alt="map">
+            <div class="bg-white rounded-2xl drop-shadow py-7 px-4 flex justify-center flex-col items-center z-10">
+                <img class="mb-8 h-full" src="./images/logo.svg" alt="logo">
+                <h1 class="text-2xl leading-tight font-medium text-center text-black mb-3">Sign in</h1>
+                <p class="w-72 text-sm leading-tight text-center text-gray-600 mb-3">Enter your phone number and password to sign in</p>
+                <div class="relative">
+                    <input type="text" id="mobile" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                    <label for="mobile" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Mobile Number</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
