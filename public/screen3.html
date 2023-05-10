@@ -26,16 +26,25 @@
 </head>
 
 <body>
-    <div class="md:max-w-sm m-auto w-full">
-        <div class="flex justify-center items-center h-screen text-center relative w-full bg-teal-50" x-data x-on:click="location.href='screen4.html';">
-            <img class="w-full z-0 absolute" src="./images/map-bg.svg" alt="map">
-            <div class="bg-white rounded-2xl drop-shadow py-7 px-4 flex justify-center flex-col items-center z-10">
-                <img class="mb-8 h-full" src="./images/logo.svg" alt="logo">
-                <h1 class="text-2xl leading-tight font-medium text-center text-black mb-3">Sign in</h1>
-                <p class="w-72 text-sm leading-tight text-center text-gray-600 mb-3">Enter your phone number and password to sign in</p>
-                <div class="relative">
-                    <input type="text" id="mobile" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                    <label for="mobile" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Mobile Number</label>
+    <div class="w-full m-auto md:max-w-sm">
+        <div class="relative flex items-center justify-center w-full h-screen text-center bg-teal-50" x-data>
+            <img class="absolute z-0 w-full" src="./images/map-bg.svg" alt="map">
+            <div class="z-10 flex flex-col items-center justify-center px-4 bg-white rounded-2xl drop-shadow py-7">
+                <img class="h-full mb-8" src="./images/logo.svg" alt="logo">
+                <h1 class="mb-3 text-2xl font-medium leading-tight text-center text-black">Sign in</h1>
+                <p class="mb-3 text-sm leading-tight text-center text-gray-600 w-72">Enter your phone number and password to sign in</p>
+                <div class="relative w-full mb-7">
+                    <input type="email" id="mobile" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " />
+                    <label for="mobile" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Mobile Number</label>
+                </div>
+                <div class="relative w-full mb-9">
+                    <input type="password" id="password" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " />
+                    <label for="password" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Password</label>
+                </div>
+                <button x-data x-on:click="location.href='screen4.html';" type="button" class="text-white bg-teal-600 mb-7 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-11/12">Sign in</button>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-teal-600 bg-gray-100 border-gray-300 rounded focus:ring-teal-500 focus:ring-2">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900">Remember me</label>
                 </div>
             </div>
         </div>
