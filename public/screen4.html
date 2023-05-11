@@ -27,16 +27,16 @@
 
 <body>
     <div class="w-full m-auto md:max-w-sm">
-        <div class="relative flex items-center justify-center w-full h-screen text-center bg-teal-50" x-data>
+        <div class="relative flex items-center justify-center w-full h-screen px-4 py-6 text-center bg-teal-50" x-data>
             <img class="absolute z-0 w-full" src="./images/map-bg.svg" alt="map">
-            <div class="z-10 flex flex-col items-center justify-center px-4 bg-white rounded-2xl drop-shadow py-7">
+            <div class="z-10 flex flex-col items-center justify-center w-full px-4 bg-white rounded-2xl drop-shadow py-7">
                 <svg class="mb-5" width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="65" cy="65" r="65" fill="#FBE596"/>
                 </svg>                    
                 <h1 class="mb-3 text-2xl font-medium leading-tight text-center text-black">Verify phone number</h1>
                 <p class="mb-3 text-sm leading-tight text-center text-gray-600 w-72">To start your registration process kindly verify your phone number.</p>
                 <div class="relative w-full mb-7">
-                    <input type="email" id="mobile" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " />
+                    <input type="tel" id="mobile" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-teal-600 peer" placeholder=" " />
                     <label for="mobile" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-teal-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Mobile Number</label>
                 </div>
                 <button x-data x-on:click="location.href='screen5.html';" type="button" class="text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-11/12">Send</button>

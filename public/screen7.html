@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- AlpineJs Scripts -->
+    <!-- @alpinejs/ui v3.12 -->
+    <script defer src="./js/alpineui.min.js"></script>
+    <!-- @alpinejs/focus v3.12 -->
+    <script defer src="./js/alpinefocus.min.js"></script>
+    <!-- alpinejs v3.12 -->
+    <script defer src="./js/alpine.min.js"></script>
+
+    <title>Quick Start Tailwind VS Code by ARM</title>
+</head>
+
+<body>
+    <div class="w-full m-auto md:max-w-sm">
+        <div class="relative flex items-center justify-center w-full h-screen px-4 py-6 text-center bg-teal-50" x-data>
+            <img class="absolute z-0 w-full" src="./images/map-bg.svg" alt="map">
+            <div class="z-10 flex flex-col items-center justify-center w-full px-4 py-6 overflow-hidden bg-white rounded-2xl drop-shadow">
+                <div class="w-full px-4 py-6 h-[50dvh] flex items-center justify-center">
+                    <h1 class="text-xl font-medium leading-tight text-center">Registration successful</h1>
+                </div>
+                <button x-data x-on:click="location.href='screen8.html';" type="button" class="text-white bg-teal-600 mb-4 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-11/12">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
